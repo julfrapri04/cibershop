@@ -1,0 +1,696 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5em;
+    border: 1px #4caf50 solid;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a048;
+}
+
+input[type="button"] {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5em;
+    border: 1px #000000 solid;
+}
+
+/*Menu lateral y contenido*/
+
+#main-container {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(#051f30, #000000);
+}
+
+.menu {
+    min-height: 100vh;
+    transition: .3s;
+    background: #ffffff12;
+    padding: 20px 20px 20px 0;
+    width: 85px;
+    box-shadow: 8px 0px 9px 0px #00000014;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+.menu:hover li span:nth-child(2) {
+    display: block;
+}
+
+.menu-content li {
+    list-style: none;
+    border-radius: 0px 50px 50px 0;
+    transition: .3s;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.menu-content li:hover {
+    background: #0c0c0c;
+}
+
+.menu-content li span:nth-child(2) {
+    display: none;
+}
+
+/*Enlaces*/
+
+a {
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    font-family: 'calibri';
+}
+
+/*Estilo iconos menu*/
+
+.material-symbols-outlined {
+    font-size: 25px;
+    margin-right: 10px;
+    background: #0c0c0c;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*Index.php*/
+
+.content {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+#introduction {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#title-body {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#formulario-btn{
+    background-color: #45a048;
+}
+
+/*Formulario*/
+#formulario-login form {
+    background-color: #ffffff12;
+    border: 1px solid #ffffff12;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-title {
+    text-align: center;
+    color: #fff;
+}
+
+
+#formulario-si {
+    width: 100%;
+    padding: 8px;
+    margin-top: 16px;
+    box-sizing: border-box;
+}
+
+/*formulario.php*/
+
+#formulario-login {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-title{
+    margin-bottom: 1em;
+}
+
+#formulario-login form{
+    max-width: 100%;
+}
+
+#gender {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+/*procesar_registro.php*/
+
+#error-container {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+#error-container h1{
+    margin-bottom: 1em;
+}
+
+/*carrocliente.php*/
+
+#contenido-carro-cliente{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+    text-align: center;
+}
+
+#contenido-carro-cliente table {
+    border: none;
+    color: #ffffff;
+    width: 100%;
+    max-width: 60%; /* Establecer un ancho máximo para la tabla */
+    margin: 0 auto; /* Centrar la tabla en la pantalla */
+    overflow-x: auto; /* Agregar desplazamiento horizontal en pantallas pequeñas */
+    border-radius: 1em;
+    background-color: #f3a83c;
+    padding: 0.5em;
+}
+
+#contenido-carro-cliente table th,
+#contenido-carro-cliente table td {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+#contenido-carro-cliente table th{
+    background-color: #45a048;
+    border: none;
+}
+#contenido-carro-cliente table td{
+    border: none;
+    background-color: rgba(44, 44, 44, 0.8);
+}
+
+#contenido-carro-cliente h1{
+    margin-bottom: 0.5em;
+}
+
+#comprar-boton{
+    margin-top: 1em;
+    max-width: 50%;
+    min-width: fit-content;
+}
+
+#select-all-container {
+    flex: 1;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#select-all-container label {
+    display: flex;
+    align-items: center;
+}
+
+#select-all-container label input {
+    margin-left: 0.5em;
+}
+
+#titulo-media{
+    display: none;
+    margin-bottom: 1em;
+    font-size: medium;
+}
+
+/*Media query para pantallas pequeñas*/
+
+@media only screen and (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+    /*procesar_registro.php*/
+    #error-container {
+        font-size:medium;
+    }
+    /*carrocliente.php*/
+    #contenido-carro-cliente table {
+        font-size: 14px;
+    }
+    /*carrocliente.php*/
+    #titulo-media{
+        display: block;
+    }
+    /*carrocliente.php*/
+    #contenido-carro-cliente th{
+        display: none;
+    }
+    /*carrocliente.php*/
+    #no_mostrar{
+        display: none;
+    }
+    /*productos.php*/
+    .producto {
+        margin: 1em 0; 
+    }
+    /*productos.php*/
+    .comprar-container {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    /*productos.php*/
+    .comprar-container input[type="submit"],
+    .comprar-container input[type="number"] {
+        flex: 0 0 100%;
+    }
+    /*productos.php*/
+    #contenido-productos h1{
+        font-size:larger;
+    }
+}
+
+/*productos.php*/
+
+#contenido-productos {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+#contenido-productos h1{
+    margin-bottom: 1em;
+}
+
+.contenedor-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: stretch; /* Estira los elementos para que tengan la misma altura */
+    max-width: 100%; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+
+.producto {
+    flex: 0 0 25%;
+    padding: 10px;
+    margin: 1em;
+}
+
+.producto h2, .producto p {
+    margin-bottom: 0.25em;
+}
+
+.comprar-container {
+    margin-top: 0.5em;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.comprar-container input[type="submit"] {
+    flex: 0 0 80%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #45a048;
+}
+
+.comprar-container input[type="number"] {
+    flex: 0 0 20%;
+    width: 40px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.comprar-container button:hover{
+    background-color: #45a048;
+}
+
+#contenido-productos select {
+    border-radius: 0.75em;
+    padding: 0.5em;
+    font-size: 16px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    border: 1px solid #ccc; /* Añade un borde */
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+    outline: none; /* Elimina el contorno predeterminado en algunos navegadores al enfocar */
+}
+
+#contenido-productos select:hover {
+    border-color: #999; /* Cambia el color del borde al pasar sobre el elemento */
+}
+
+#contenido-productos select:focus {
+    border-color: #4CAF50; /* Cambia el color del borde al enfocar el elemento */
+}
+
+/*cerrarSesion.php*/
+
+#contenido-cerrar-sesion{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+#contenido-cerrar-sesion h1{
+    margin-bottom: 1em;
+}
+
+/*procesar_login.php*/
+
+#respuesta-login{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+#respuesta-login p{
+    margin-bottom: 1em;
+}
+
+/*adminPanel.php*/
+
+#panel-administrador{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+    text-align: center;
+}
+
+#panel-administrador p{
+    margin-bottom: 1em;
+}
+
+#panel-administrador form{
+    margin-top: 1em;
+}
+
+#panel-administrador button{
+    padding: 0.7em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: #4caf50;
+    border: 1px #4caf50 solid;
+
+}
+
+#panel-administrador button:hover{
+    background-color: #45a048;
+}
+
+/*crearBD.php*/
+
+#info-crearBD{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+/*no_authorized.php*/
+
+#autorized-denied-container{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+#autorized-denied-container h1{
+    margin-bottom: 0.7em;
+}
+
+#enlaces-denied {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #fff;
+}
+
+#enlaces-denied a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-bottom: 1px solid transparent; 
+    transition:  border-bottom 0.5s ease-in-out, font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#enlaces-denied a:hover {
+    border-bottom: 1px solid #45a048;
+    font-size: larger;
+    color: #45a048;
+}
+
+#contenido-anadircarro{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+    text-align: center;
+}
+
+/*anadircarro.php*/
+
+#contenido-anadircarro h1{
+    margin-bottom: 0.5em;
+}
+
+#cadena-categoria{
+    margin-bottom: 1em;
+}
+
+/*procesar-compra*/
+
+.respuesta-compra{
+    flex: 1;
+    padding: 20px;
+    color: #000000;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+#ticket-compra{
+    border: 1px solid #ffffffbd;
+    background-color: #ffffffbd;
+    padding: 1em;
+    border-radius: 0.7em;
+}
+
+#ticket-compra h3{
+    text-align: center;
+}
+
+#texto-error{
+    color: #fff;
+}
+
+#titulo-ticket{
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#carro-compra{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1em;
+}
+
+#btn-tarjeta, #btn-contra-reembolso{
+    padding: 0.5em;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5em;
+    border: 1px #4caf50 solid;
+    margin-top: 1em;
+}
+
+/*pagoTarjeta.php*/
+
+#id{
+    opacity: 0;
+}
+
+.respuesta-pago{
+    flex: 1;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    font-size: larger;
+}
+
+.respuesta-pago h2{
+    margin-bottom: 1em;
+}
+
+#boton-tarjeta{
+    margin-top: 1em;
+}
+
+/*procesar_pago.php*/
+
+#contenido-pago-tarjeta{
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+/*contacto.php*/
+
+#contenido-contacto{
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+    width: 70%
+}   
+
+#header{
+    color: #ffffff;
+    margin-bottom: 1em;
+}
+
+#contact-section{
+    color: #ffffff;
+    width: 70%
+}
+
+#contact-section h2,#contact-section p{
+    margin-bottom: 0.5em;
+}
+
+#boton-contacto{
+    margin-top: 1em;
+}
+
+#contact-form textarea{
+    width: 100%;
+    resize: none;
+}
+
+/*procesar-contacto.php*/
+
+#respuesta-contacto{
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-size: larger;
+}
+
+/*procesar_compra*/
+#formulario-compra{
+    color: #fff;
+    margin-bottom: 1em;
+}
